@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6b9d92a53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/903625d3-852b-40cf-b4f3-75d77d559a47-PhotoRoom.png-PhotoRoom.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>HI, I'M <span>NICK</span></h1>
+            <h2>HI, I'M <span>NICK</span></h2>
+            <h1>HI, I'M <span>NICK</span></h1>
+        </div>
+    </div>
+</div>
+
+<!---------- About ------------->
+
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/nicholas.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos nisi non cumque placeat a dolor molestias sed repellendus sapiente amet facilis est architecto magnam officia, id, voluptates accusantium ipsa!</p>     
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                    <p class="tab-links" onclick="opentab('involvment')"> Involvement </p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python<br>C++</li>
+                        <li><span>Front-End Development</span><br>HTML / CSS<br>JavaScript <br> React.js</li>
+                        <li><span>Development & Design Tools</span><br>Github / Git<br> OnShape<br> Arduino</li>
+                        <li><span>Soft Skills</span><br>Team Leadership<br>Effective Communication<br>Problem-Solving</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Undergraduate Research Intern ( Fall 2023 – Current ) </span> <br> Worked under Dr. Jerimaiah Blanchard on a research project focused on enhancing user engagement and educational value through interactive game design.</li>
+                        <li><span>Assistant Coach ( April  2022 – July 2023 ) </span> <br> Assisted head coach in liaising with over 150 parents and 10+ neighborhood organizations, serving as the primary communication bridge.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="involvment">
+                    <ul>
+                        <li><span>Society of Asian Scientist and Engineers ( Fall 2023 – Current )</span> <br>  Active intern and member contributing to the promotion of cultural diversity in STEM fields through community outreach and educational programs.</li> <li><span></li></li>
+                        <li><span>Emerging Leaders Program ( Fall 2022 – Spring 2023 )</span> <br> Participated in leadership workshops and team-building activities, focusing on developing communication, leadership, and organizational skills.</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!------------Resume------------------>
+
+
+<!------------Projects------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/nicholas.jpg">
+                <div class="layer">
+                    <h3>Fast Fingers Prosthetic</h3>
+                    <p>Engineered a prosthetic tool in C++ tailored for individuals with mobility and hand function disabilities.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/nickad.jpg">
+                <div class="layer">
+                    <h3>Minesweeper</h3>
+                    <p>Developed a functional Minesweeper game using  C++, incorporating recursion, pointer manipulation, and integrated SMFL.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tumblr_inline_pbto759idz1rfuffa_540.jpg">
+                <div class="layer">
+                    <h3>Sudoku</h3>
+                    <p>Developed a functional Sudoku game using Python and the PyGame development library, allowing users to experience classic puzzle gameplay</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+</div>
+
+<!------------Contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> nicholastayag@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (904) 770-1251 </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nicholastayag"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nicholas-tayag"><i class="fa-brands fa-github"></i></a>
+                    <a href="images/resume11_23.docx (1).pdf">Download Resume</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+
+
+</html>
